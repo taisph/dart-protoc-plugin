@@ -17,6 +17,7 @@ class Empty extends $pb.GeneratedMessage {
   Empty() : super();
   Empty.fromBuffer(List<int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromBuffer(i, r);
   Empty.fromJson(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromJson(i, r);
+  Empty.fromProto3Json(String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) : super.fromProto3Json(i, r);
   Empty clone() => new Empty()..mergeFromMessage(this);
   Empty copyWith(void Function(Empty) updates) => super.copyWith((message) => updates(message as Empty));
   $pb.BuilderInfo get info_ => _i;

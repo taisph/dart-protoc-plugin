@@ -258,6 +258,9 @@ class MessageGenerator extends ProtobufContainer {
       out.println('${classname}.fromJson(String i,'
           ' [$_protobufImportPrefix.ExtensionRegistry r = $_protobufImportPrefix.ExtensionRegistry.EMPTY])'
           ' : super.fromJson(i, r);');
+      out.println('${classname}.fromProto3Json(String i,'
+          ' [$_protobufImportPrefix.ExtensionRegistry r = $_protobufImportPrefix.ExtensionRegistry.EMPTY])'
+          ' : super.fromProto3Json(i, r);');
       out.println('${classname} clone() =>'
           ' new ${classname}()..mergeFromMessage(this);');
       out.println('$classname copyWith(void Function($classname) updates) =>'
